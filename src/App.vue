@@ -1,21 +1,11 @@
 <template>
   <div id="app">
-    111
-    <span>222</span>
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'App'
 }
 </script>
-
-<style lang="less">
-#app{
-  color: red;
-  span{
-    color: blue;
-  }
-}
-</style>
