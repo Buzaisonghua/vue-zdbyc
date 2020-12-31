@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import less from 'less' // less
+Vue.use(less)
 
 Vue.config.productionTip = false
 
