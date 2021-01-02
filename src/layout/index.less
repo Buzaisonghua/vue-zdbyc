@@ -1,0 +1,48 @@
+.layout {
+  min-height: 100%;
+  /* 头部 */
+  .header {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    height: @LAYOUT_HEADER_HEIGHT;
+    line-height: @LAYOUT_HEADER_HEIGHT;
+    z-index: 999;
+  }
+  /* 主体 */
+  .body {
+    margin-top: @LAYOUT_HEADER_HEIGHT;
+  }
+  /* 侧边导航 */
+  .sider {
+    position: fixed;
+    left: 0;
+    top: @LAYOUT_HEADER_HEIGHT;
+    bottom: 0;
+    border-right: 1px solid #dcdee0;
+    box-sizing: content-box;
+    z-index: 999;
+  }
+  /* 侧边控制 */
+  .menu-control {
+    height: @LAYOUT_SIDERBAR_CONTROL_HEIGHT;
+    line-height: @LAYOUT_SIDERBAR_CONTROL_HEIGHT;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ebedf0;
+    animation: all 0.3s;
+    cursor: pointer;
+    span {
+      margin-left: 8px;
+    }
+    &:hover {
+      color: #d94141;
+    }
+  }
+  /* 主体内容 */
+  .ant-layout-content {
+    animation: all 0.3s;
+  }
+}

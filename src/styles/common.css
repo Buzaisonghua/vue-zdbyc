@@ -1,0 +1,59 @@
+.xui-table-fill td {
+    border: 1px solid #666666;
+    min-height: 32px;
+}
+.xui-table-layout, .xui-table-fill {
+    table-layout: fixed;
+    border: none;
+}
+.xui-layout {
+    width: 100%;
+}
+.xui-table-fill td {
+    border: 1px solid #666666;
+    min-height: 32px;
+    word-break: break-all;
+}
+.xui-layout-item {
+    padding: 0px;
+    margin: 0px;
+    height: 32px;
+}
+.xui-com .layui-form-item {
+    margin: 5px 10px;
+}
+.xui-com .layui-form-label {
+    margin-bottom: 0px;
+    /* padding-right: 6px; */
+}
+
+element.style {
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+em {
+    font-style: italic;
+}
+Style Attribute {
+    width: 100%;
+    text-align: left;
+}
+.layui-form-label {
+    position: relative;
+    float: left;
+    display: block;
+    padding: 9px 5px;
+    width: 80px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}

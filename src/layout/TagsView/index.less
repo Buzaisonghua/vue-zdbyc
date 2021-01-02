@@ -1,0 +1,27 @@
+.container {
+  padding: 0 16px;
+  height: @LAYOUT_TAGSVIEW_HEIGHT;
+  line-height: @LAYOUT_TAGSVIEW_HEIGHT;
+  font-size: 14px;
+  color: #666;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  .ant-breadcrumb {
+    line-height: @LAYOUT_TAGSVIEW_HEIGHT;
+  }
+  .location {
+    float: left;
+  }
+  .tags {
+    float: left;
+    &:last-child {
+      color: #333;
+    }
+    .tag:not(:last-child) {
+      cursor: pointer;
+      &:hover:not(:last-child) {
+        color: #d94141;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.week-view-tooltip {
+    display: flex;
+    width: 336px;
+    margin-bottom: 16px;
+    align-items: center;
+    .week-view-tooltip-index {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border: 1px solid transparent;
+      text-align: center;
+      line-height: 36px;
+      margin-right: 16px;
+      font-weight: 700;
+      &.index-a {
+        border-color: #d94141;
+        color: #d94141;
+      }
+      &.index-b {
+        border-color: #2cc148;
+        color: #2cc148;
+      }
+    }
+    .week-view-tooltip-content {
+      flex: 1;
+      width: 300px;
+      .week-view-tooltip-content-title {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        .week-view-tooltip-content-title1 {
+          font-size: 16px;
+          font-weight: 700;
+          width: 206px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .week-view-tooltip-content-title-status {
+          margin-left: 4px;
+          width: 50px;
+          font-size: 12px;
+          line-height: 26px;
+          text-align: center;
+          border: 1px solid transparent;
+          &.status-a {
+            border-color: #d94141;
+            color: #d94141;
+          }
+          &.status-b {
+            color: #2cc148;
+            border-color: #2cc148;
+          }
+        }
+      }
+    }
+  }
+  
+  .week-view-tooltip-text {
+    p {
+      margin-bottom: 0px;
+      line-height: 30px;
+      &.circle-icon {
+        text-align: right;
+        .circle-status {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          margin-right: 2px;
+          &.circle-status-a {
+            background: #d94141;
+          }
+          &.circle-status-b {
+            background: #2cc148;
+          }
+        }
+      }
+      &.week-view-tooltip-text-item {
+        color: #888;
+        span {
+          color: #d94141;
+        }
+      }
+    }
+    .week-view-tooltip-am {
+      display: inline-block;
+      border: 1px solid #d94141;
+      color: #d94141;
+      margin-right: 6px;
+      padding: 0 6px;
+      border-radius: 2px;
+      line-height: 20px;
+    }
+    .week-view-tooltip-pm {
+      display: inline-block;
+      border: 1px solid #2cc148;
+      color: #2cc148;
+      margin-right: 6px;
+      padding: 0 6px;
+      border-radius: 2px;
+      line-height: 20px;
+    }
+    .week-view-tooltip-text-o {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }

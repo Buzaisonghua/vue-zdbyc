@@ -1,0 +1,206 @@
+/*表单通用*/
+.form-container {
+  box-sizing: border-box;
+  background: #fff;
+  .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    .form-header-left {
+      .ant-btn {
+        margin-right: 10px;
+      }
+    }
+    .form-header-right {
+      .ant-btn {
+        margin-left: 10px;
+      }
+    }
+  }
+  .form-main {
+    .form-section {
+      .form-section-title {
+        position: relative;
+        margin: 24px 0;
+        padding-left: 10px;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          display: inline-block;
+          width: 4px;
+          height: 23px;
+          margin: auto;
+          background: #d94141;
+        }
+
+        .form-section-switch {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          color: #908d8d;
+          font-size: 16px;
+          .form-section-switch-item {
+            padding-right: 16px;
+            display: flex;
+            align-items: center;
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*上传附件*/
+  .upload-file-list-img {
+    float: left;
+    width: 104px;
+    height: 104px;
+    margin: 0 8px 8px 0;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease;
+    &:hover {
+      .layer-img {
+        display: flex;
+      }
+    }
+    img {
+      width: 86px;
+      height: 100%;
+    }
+    .layer-img {
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 86px;
+      height: 86px;
+      background: rgba(0, 0, 0, 0.5);
+      cursor: default;
+      display: none;
+      .anticon-eye {
+        color: #fff;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .anticon-delete {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  /deep/ .ant-upload-list-picture-card-container {
+    display: none;
+  }
+
+  .suffix {
+    position: absolute;
+    top: -9px;
+    right: 0;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    min-width: 40px;
+    width: auto;
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    img {
+      width: 20px;
+    }
+  }
+
+  .from-add-tags {
+    display: flex;
+    .from-add-tags-item {
+      width: 804px;
+      height: 38px;
+      background: #ffffff;
+      border-radius: 2px;
+      border: 1px dashed #dcdee0;
+      padding-left: 10px;
+      .from-add-tags-chos {
+        padding-right: 10px;
+        color: #999;
+      }
+    }
+    .from-add-tags-add {
+      padding-left: 7px;
+      input {
+        width: 167px;
+        height: 38px;
+        background: #ffffff;
+        border-radius: 2px;
+        border: 1px solid #eaeaea;
+        margin-right: 7px;
+      }
+      span {
+        padding: 8px 15px;
+        background: @primary-color;
+        border-radius: 2px;
+        margin-right: 0;
+        color: #ffffff;
+      }
+    }
+  }
+
+  /* 地图 */
+  .from-add-map .ant-form-item-control-wrapper .ant-form-item-control .ant-form-item-children {
+    display: flex;
+  }
+  .ant-row.ant-form-item {
+    display: flex;
+  }
+  .ant-col.ant-col-12.ant-form-item-control-wrapper {
+    flex: 1;
+  }
+
+  .ant-form-item {
+    margin-bottom: 24px;
+  }
+  .ant-input {
+    height: 38px;
+    line-height: 38px;
+  }
+  .ant-tag.ant-tag-checkable {
+    color: #999;
+    border: 1px solid #999999;
+  }
+  .ant-checkbox-wrapper {
+    margin-right: 20px;
+  }
+  .ant-tag.ant-tag-checkable.ant-tag-checkable-checked {
+    color: #fff;
+    border: 1px solid #d94141;
+  }
+  .ant-tag .anticon-close {
+    color: #d94141;
+  }
+  .text-area-height {
+    height: 80px;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
